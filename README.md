@@ -3,7 +3,7 @@ by [Amanda Oliveira](https://www.linkedin.com/in/amanda-guedes-de-oliveira-07763
 
 <center>
 
-![](./pics/interactive.png){width=50%}
+![](./pics/interactive.png)
 
 </center>
 
