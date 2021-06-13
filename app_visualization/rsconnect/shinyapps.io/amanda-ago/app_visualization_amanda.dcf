@@ -1,0 +1,13 @@
+name: app_visualization_amanda
+title: app_visualization_amanda
+username:
+account: amanda-ago
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4265288
+bundleId: 4711286
+url: https://amanda-ago.shinyapps.io/app_visualization_amanda/
+when: 1623591049.42072
+lastSyncTime: 1623591049.42072
+asMultiple: FALSE
+asStatic: FALSE

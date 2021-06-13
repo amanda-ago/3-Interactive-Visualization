@@ -1,0 +1,58 @@
+--- 
+output:
+  html_document:
+    theme: null
+    mathjax: null
+---
+
+
+| **by Amanda Oliveira**
+|
+|
+| This interactive visualization uses the data sets quiz-categories.csv and midterm-results.csv. 
+| These data represent midterm results from an open book test. 
+| The categories represent the skills required to answer each question.
+|
+|
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(dplyr)
+library(RColorBrewer)
+library(wordcloud)
+library(wordcloud2)
+
+quiz <- read.csv("quiz-categories.csv")
+quiz = subset(quiz, select = -c(Question) )
+quiz <- quiz %>% group_by() %>% summarise_all(sum)
+quiz<- as.data.frame(t(quiz))
+quiz <- quiz %>% add_rownames(var="skill")
+colnames(quiz)[2] <- "freq"
+
+set.seed(123)
+wordcloud2(quiz, size=.5, backgroundColor="grey", gridSize=.2)
+
+
+```
+
+|
+|
+
+**wrangling** - Question required data manipulations skills  
+**coding** - Question required coding skills  
+**d.trees** - Question involved decision trees  
+**sna** - Question involved social network analysis  
+**nlp** - Question involved natural language processing  
+**viz** - Question involved visualization of data  
+**n.nets** - Question involved neural nets  
+**googleable** - Question could be answered by searching the internet  
+**non-googleable** - Question could not be answered through simple searching of the internet  
+**jitl** - Question involved learning something new (just in time learning)  
+**substantive** - Question involved wrestling with a complex idea that does not have a definitive answer
+
+
+[GitHub - Code and Data](https://github.com/amanda-ago/3-Interactive-Visualization)
+
+|
+|
+|

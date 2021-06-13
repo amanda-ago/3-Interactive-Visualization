@@ -1,0 +1,13 @@
+name: example2_finalproject
+title: example2_finalproject
+username:
+account: amanda-ago
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3755906
+bundleId: 4711281
+url: https://amanda-ago.shinyapps.io/example2_finalproject/
+when: 1623590797.61196
+lastSyncTime: 1623590797.61196
+asMultiple: FALSE
+asStatic: FALSE
